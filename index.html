@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<!-- объявление -->
+	<script>
+			var me = {
+				surname: 'Михеева',
+                name : 'Татьяна',
+			    patronymic: 'Александровна',
+			    ocupation: 'Преподаватель специальных дисциплин',
+			    degree: 'Высшее',
+			    education : 'Московский государственный институт электронной техники (технический университет)',
+                qualification: 'Инженер-программист инфокоммуникационных систем',
+			    specialty: 'Программное обеспечение радиоэлектронных систем',
+			    discipline: ['Основы алгоритмизации и программирования', 'Компьютерная графика'],
+                	category: prompt('Категория преподавателя:', 'Первая'),
+            		experience: prompt('Стаж работы:', ' '),
+            		email: prompt('E-mail:', 'vishnevskaya@gmail.com'),
+           			site: prompt('Персональный сайт:', 'MayaGraphics.ru')
+			    }
+	</script>
+</head>
+
+<body>
+	
+	<div class="header">
+		
+		
+		  <a class="active" href="#home">О проекте</a>
+		  <a href="#about">Курсы</a>
+		  <a href="#about">Преподаватели</a>
+		  <a href="#about">Контакты</a>
+		
+	  </div>
+
+
+
+	<main class="main-content">
+		<div class="main-main">
+
+
+		<!-- картинка -->
+				<div class="imgsave">
+					<img src="img.jpg" width="350" >   
+				</div>
+		<!-- картинка -->
+				
+
+
+ <!-- вывод -->
+<div class="wr">
+
+	<section  class="info" >
+
+	    <script>
+		    let line = `
+                <h1> ${me.surname} <br> ${me.name} ${me.patronymic} </h1>
+                                    <p><h2> ${me.ocupation} </h2></p>
+                                    <hr>
+                                    <p><h3>Основная информация:</h3>
+                                        <ul>
+                                            <li><b>Уровень образования: ${me.degree}</b></li>
+                                            <li><b>Образование: ${me.education}</b></li>
+                                            <li><b>Квалификация: ${me.qualification}</b></li>
+                                            <li><b>Специализация: ${me.specialty}</b></li>
+                                            <li><b>Преподаваемые дисциплины:</b></li>
+                                            <ul class= "ul">
+                                                <li><b>${me.discipline[0]}</b></li>
+                                                <li><b>${me.discipline[1]}</b></li>
+                                            </ul>
+                                        </ul>
+                                    </p>
+                                    <p><h3>Дополнительная информация:</h3>
+                                        <ul>
+                                            <li><b>Категория: ${me.category}</b></li>
+                                            <li><b>Стаж: ${me.experience}</b></li>
+                                            <li><b>E-mail: ${me.email}</b></li>
+                                            <li><b>Персональный сайт: ${me.site}</b></li>
+                                        </ul>
+                                    </p>
+                        `;
+	            document.write(line); 	
+	    </script>
+						</section>
+ 					</div>
+
+ 	<!-- вывод -->
+
+                
+
+
+            </div>
+    </main>
+    
+</body>
+</html>
